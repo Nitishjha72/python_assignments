@@ -1,0 +1,79 @@
+1. Write a Python Program to Check if a Number is Positive, Negative or Zero?
+Answer:
+def check_num():
+    try:
+        num = float(input("Enter a number: "))
+        if num > 0:
+           print("Positive number")
+        elif num == 0:
+           print("Zero")
+        else:
+           print("Negative number")
+    except Exception as e:
+        print('Enter a numeric value')
+
+2. Write a Python Program to Check if a Number is Odd or Even?
+Answer:
+def check_num():
+    try:
+        num = int(input('Enter a number\n'))
+        if num%2==0:
+            print('Even number')
+        else:
+            print('Odd number')
+    except Exception as e:
+        print('Enter integer value')
+
+3. Write a Python Program to Check Leap Year?
+Answer:
+def check_leap_year():
+    try:
+        year = int(input('Enter a number\n'))
+        if year>0:
+            if (year%4==0) and (year%100!=0):
+                print('{0} is a leap year'.format(year))
+            elif (year%400==0) and (year%100==0):
+                print('{0} is a Leap year'.format(year))
+            else:
+                print('{0} is not a Leap year'.format(year))
+    except Exception as e:
+        print('Enter positive integer value')
+
+4. Write a Python Program to Check Prime Number?
+Answer:
+def check_prime_number():
+    try:
+        num = int(input('Enter an integer value\n'))
+        if num >1:
+            factors=0
+            for i in range(1,num):
+                if num%i==0:
+                    factors+=1
+            if factors>2:
+                print('{0} IS NOT A PRIME NUMBER'.format(num))
+            else:
+                print('{0} IS A PRIME NUMBER'.format(num))
+        else:
+            print('Enter a positive number greater than 1')
+            
+    except Exception as e:
+        print('Enter a POSITIVE integer value')
+
+5. Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+Answer:
+def check_prime(num):
+    if num >1:
+        factors=0
+        for i in range(1,num):
+            if num%i==0:
+                factors+=1
+        if factors>2:
+            return False
+        else:
+            return True
+prime_list=[]
+for i in range(0,10000):
+    if (check_prime(i)):
+        prime_list.append(i)
+print(prime_list)
+        

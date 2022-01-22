@@ -1,0 +1,32 @@
+Answer 1: 
+	Values: 'hello', -87.8, 6 
+	Expressions: *, -,/,+
+	
+Answer 2:
+Variable is like a container which can contain any type of data like string, integer, float, etc. where as String is a type of data within quotes and can be stored within a variable.
+
+Answer 3:
+	Three different data types: integer, float, string
+
+Answer 4:
+	Expressions are made up of combinations of operators, constants and variables. Its work is to compute the data fed on it and produce an output of it.
+	
+Answer 5: When data is fed to the expression, it will produce an output of it whereas a statement like spam=10, it is just storing the value 10 in variable spam. It is not returning any output.
+
+Answer 6: bacon will remain 22.
+
+Answer 7:
+	'spam' + 'spamspam' will return 'spamspamspam'. It concatenated the 1st and 2nd string.
+	'spam' * 3 will also return 'spamspamspam' . It multiplied spam 3 times.
+
+Answer 8:
+	100 is invalid because it will create confusion whether we are trying to use actual 100 (integer) or the variable 100 which we have created.
+	a = a+100 (Here it will create conflict whether its a variable or integer)
+	
+Answer 9: int() will be used to get integer version of a value
+		  str() will be used to get string version of a value
+		  float() will be used to get float version of a value
+		  
+Answer 10:
+		'I have eaten ' + 99 + ' burritos.'  This will throw error because only string can be concatenated to a string but 99 is an integer.
+		We can convert 99 to string and then concatenate. 'I have eaten ' + str(99) + ' burritos.'

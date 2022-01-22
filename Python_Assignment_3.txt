@@ -1,0 +1,51 @@
+1. Why are functions advantageous to have in your programs?
+Answer: Function help us in reusing our code in the program. We wont have to write the same code again and again. Instead we can write it once and can reuse the same code just by calling the function.
+	def some_func():
+		return 'I m a function'
+		
+	a = some_func()
+	b = some_func()
+
+2. When does the code in a function run: when it's specified or when it's called?
+Answer:  Code in a function runs when it is being called.
+
+3. What statement creates a function?
+Answer: def 
+
+4. What is the difference between a function and a function call?
+Answer: Function can be created by using def keyword. Below is the example of a function.
+		def any_func():
+			return 100
+
+		It can be called just by using the function name. In above case a=any_func() will work.
+		
+5. How many global scopes are there in a Python program? How many local scopes?
+Answer: Global scope is 1. Local scope is also 1.
+
+6. What happens to variables in a local scope when the function call returns?
+Answer: When a function returns the value, all its local variables are destroyed.
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+Answer: A return is a value that a function returns to the calling script or function when it completes its task. No, expression can not have return value.
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+Answer: If no return mentioned in a function, then it will return None.
+	
+9. How do you make a function variable refer to the global variable?
+Answer: By using the global variables, we can mention which variables are global.
+
+10. What is the data type of None?
+Answer: It is the datatype of the class NoneType Object.
+
+11. What does the sentence import areallyourpetsnamederic do?
+Answer: This sentence will import all its functions and global variables in the program where it is being imported. We can the use the its methods and glbal variables.
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+Answer: spam.bacon()
+
+13. What can you do to save a programme from crashing if it encounters an error?
+Answer: We can handle the exception/error in a try except block.
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+Answer: In try blck, we normally write our codes which may throw error and in except clause, errors are being handled according to the the mentiond exception.
+

@@ -1,0 +1,51 @@
+1. Write a Python program to convert kilometers to miles?
+Answer:
+def km_to_mile(km):
+	try:
+		return km*0.62137
+	except Exception as e:
+		print('Error in converting from Km to Miles')
+
+
+2. Write a Python program to convert Celsius to Fahrenheit?
+Answer:
+def c_to_f(c):
+	try:
+		return (c*1.8)+32
+	except Exception as e:
+		print('Error in converting from Celsius to Fahrenheit')
+	
+
+3. Write a Python program to display calendar?
+Answer:
+import calendar
+def monthly_cal(yy,mm):
+	try: 
+		print(calendar.month(yy,mm))
+	except:
+		print('Error in displaying the calendar for',mm,yy)
+
+4. Write a Python program to solve quadratic equation?
+Answer:
+
+import cmath
+
+def quad_sol(a,b,c):
+    d = (b**2) - (4*a*c)
+    sol1 = (-b-cmath.sqrt(d))/(2*a)
+    sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+    print('The solution are {0} and {1}'.format(sol1,sol2))
+
+quad_sol(1,5,6)
+
+5. Write a Python program to swap two variables without temp variable?
+Answer:
+def swap(a,b):
+    print('Before swap: \n'+'A is',a,'\nB is',b)
+    a=a+b
+    b=a-b
+    a=a-b
+    print('After swap: \n'+'A is',a,'\nB is',b)
+	
+swap(10,20)

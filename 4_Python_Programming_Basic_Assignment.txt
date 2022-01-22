@@ -1,0 +1,91 @@
+1. Write a Python Program to Find the Factorial of a Number?
+Answer:
+def factorial():
+    try:
+        number = int(input('Enter a positive integer\n'))
+        n = number
+        if n>=0:
+            fact = 1
+            while n>0:
+                fact=fact*n
+                n-=1
+            print ('Factorial of {0} is {1}'.format(number,fact))
+        else:
+            print ('Enter positive integer value')
+        
+    except Exception as e:
+        print('Enter a positive integer value')
+
+2. Write a Python Program to Display the multiplication Table?
+Answer:
+def mul_table():
+    try:
+        number = int(input('Enter a positive integer\n'))
+        for i in range(1,11):
+            print('{0} x {1} = {2}'.format(number,i,number*i))
+    except Exception as e:
+        print('Enter a positive integer value')
+
+3. Write a Python Program to Print the Fibonacci sequence?
+Answer:
+def fibonacci():
+    try:
+        number = int(input('Enter a positive integer\n'))
+        if(number>0):
+            a=0
+            b=1
+            print('Fibonacci series for {} sequence is : '.format(number))
+            if number==1:
+                print(0)
+            elif number==2:
+                print(0,1)
+            elif number >2:
+                print(0,1,end=' ')
+                while number>2:
+                    print(a+b, end=' ')
+                    b=a+b
+                    a=b-a
+                    number-=1
+        else:
+            print('Enter a positive integer value greater than 0')
+            
+    except Exception as e:
+        print('Enter a positive integer value')
+
+4. Write a Python Program to Check Armstrong Number?
+def arm_strong():
+    try:
+        number = int(input('Enter a positive integer\n'))
+        if(number>0):
+            n=number
+            sum_of_cube = 0
+            while n>0:
+                sum_of_cube += (n%10)**3
+                n=n//10
+            if(number==sum_of_cube):
+                print('{0} is an Armstrong number'.format(number))
+            else:
+                print('{0} is not an Armstrong number'.format(number))
+        else:
+            print('Enter a positive integer value greater than 0')
+            
+    except Exception as e:
+        print('Enter a positive integer value')
+
+5. Write a Python Program to Find Armstrong Number in an Interval?
+Answer:
+def arm_strong_in_interval(lower,upper):
+    for i in range(lower,upper+1):
+        num = i
+        sum=0
+        while i>0:
+            sum+=(i%10)**3
+            i=i//10
+        if sum==num:
+            print(num)
+	
+
+6. Write a Python Program to Find the Sum of Natural Numbers?
+Answer:
+def sum_of_natural_num(n):
+	print(0.5 * (n*n+1))

@@ -11,7 +11,7 @@
 			False	False	False	False
 			
 			
-				`		NOT 
+				`   NOT 
 			True  -->  False
 			False -->  True
 			
@@ -50,10 +50,10 @@
 			print('spam')
 
 	Answer: 1. print('eggs')  1st block
-			2. print('bacon') 2nd block
-			3. print('ham')   3rd block
-			   print('spam')
-			   print('spam')
+		2. print('bacon') 2nd block
+		3. print('ham')   3rd block
+		   print('spam')
+		   print('spam')
 
 
 8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
@@ -90,4 +90,4 @@
 
 13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
 	Answer: import spam
-			spam.bacon()
+		spam.bacon()
